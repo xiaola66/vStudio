@@ -1,0 +1,55 @@
+/*
+ * @Author: Ren jieyun
+ * @Date:   2020-02-20 10:48:03
+ * @Last Modified by:   Ren jieyun
+ * @Last Modified time: 2020-02-20 10:48:04
+ */
+.drawerOpen {
+  width: 200px;
+  top: 105px;
+  right: 16px;
+  bottom: 40px;
+  display: block;
+  z-index: 1200;
+  outline: none;
+  position: absolute;
+  overflow-y: auto;
+  transform: translateX(0px);
+  transition: 0.5s transform;
+  -moz-transition: 0.5s transform;
+  -webkit-transition: 0.5s transform;
+  -o-transition: 0.5s transform;
+}
+
+.drawerClose {
+  display: block;
+  width: 200px;
+  top: 101px;
+  right: 10px;
+  bottom: 23px;
+  z-index: 1200;
+  outline: none;
+  position: absolute;
+  overflow-y: auto;
+  transform: translateX(320px);
+  transition: 0.5s transform;
+  -moz-transition: 0.5s transform;
+  -webkit-transition: 0.5s transform;
+  -o-transition: 0.5s transform;
+}
+
+.canvas-change-max {
+  width: 'calc(100% - 50px)';
+  transition:width 0.7s;
+  -moz-transition:width 0.7s; /* Firefox 4 */
+  -webkit-transition:width 0.7s; /* Safari and Chrome */
+  -o-transition:width 0.7s;
+}
+
+.canvas-change-min {
+  width: 'calc(100% - 300px)';
+  transition:width 0.7s;
+  -moz-transition:width 0.7s; /* Firefox 4 */
+  -webkit-transition:width 0.7s; /* Safari and Chrome */
+  -o-transition:width 0.7s;
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  position: relative;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary::after {
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  content: '\e66d';
+  font-family: "iconfont";
+  transform: translateY(-50%);
+  transition: transform .2s ease-in-out;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding-left: 20px;
+  margin-bottom: 6px;
+  background: #FFFFFF;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}

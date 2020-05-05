@@ -1,0 +1,199 @@
+/*
+ * @Author: Ren jieyun
+ * @Date:   2020-02-20 17:40:34
+ * @Last Modified by:   Ren jieyun
+ * @Last Modified time: 2020-02-20 17:40:34
+ */
+@import "../../styles/mixins";
+
+@mixin theme() {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  background: none;
+  border: none;
+}
+
+// Fill Background
+.bgInfo, div.bgInfo{
+  background: material-color('blue', '300');
+  color: #ffffff;
+  button{
+    color: material-color('blue', '900');
+  }
+}
+.bgSuccess, div.bgSuccess{
+  background: material-color('green', '300');
+  color: #ffffff;
+  // button{
+  //   color: material-color('green', '900');
+  // }
+}
+.bgWarning, div.bgWarning{
+  background: material-color('orange', '300');
+  color: #ffffff;
+  // button{
+  //   color: material-color('orange', '900');
+  // }
+}
+.bgError, div.bgError{
+  background: material-color('red', '300');
+  color: #ffffff;
+  // button{
+  //   color: material-color('red', '900');
+  // }
+}
+.bgDefault, div.bgDefault{
+  background: material-color('grey', '700');
+  color: #ffffff;
+}
+.bgHasDistributed, div.bgHasDistributed {
+  background: #b1f274;
+  color: #ffffff;
+}
+
+.bgStatus1, div.bgStatus1, .progressBgStatus1 div {
+  background: #f53171;
+  color: #ffffff;
+}
+.bgStatus2, div.bgStatus2, .progressBgStatus2 div {
+  background: #ffbf00;
+  color: #ffffff;
+}
+.bgStatus3, div.bgStatus3, .progressBgStatus3 div {
+  background: #f56a00;
+  color: #ffffff;
+}
+.bgStatus4, div.bgStatus4, .progressBgStatus4 div {
+  background: #f04134;
+  color: #ffffff;
+}
+.bgStatus5, div.bgStatus5, .progressBgStatus5 div {
+  background: #00a854;
+  color: #ffffff;
+}
+.bgStatus6, div.bgStatus6, .progressBgStatus6 div {
+  background: #00a2ae;
+  color: #ffffff;
+}
+.bgStatus7, div.bgStatus7, .progressBgStatus7 div {
+  background: #108ee9;
+  color: #ffffff;
+}
+.bgStatus8, div.bgStatus8, .progressBgStatus8 div {
+  background: #7265e6;
+  color: #ffffff;
+}
+.bgStatus9, div.bgStatus9, .progressBgStatus9 div {
+  background: #3d4395;
+  color: #ffffff;
+}
+.bgStatus10, div.bgStatus10, .progressBgStatus10 div {
+  background: #007cb6;
+  color: #ffffff;
+}
+.bgStatus11, div.bgStatus11, .progressBgStatus11 div {
+  background: #00cc88;
+  color: #ffffff;
+}
+.bgStatus12, div.bgStatus12, .progressBgStatus12 div {
+  background: #f24737;
+  color: #ffffff;
+}
+.bgStatus13, div.bgStatus13, .progressBgStatus13 div {
+  background: #567ddc;
+  color: #ffffff;
+}
+
+// Fill Background Table Row
+table tr{
+  &.bgInfo{
+    background: material-color('blue', '50');
+    td{
+      color: material-color('blue', '500');
+    }
+  }
+  &.bgSuccess{
+    background: material-color('green', '50');
+    td{
+      color: material-color('green', '500');
+    }
+  }
+  &.bgWarning{
+    background: material-color('orange', '50');
+    td{
+      color: material-color('orange', '500');
+    }
+  }
+  &.bgError{
+    background: material-color('red', '50');
+    td{
+      color: material-color('red', '500');
+    }
+  }
+  &.bgDefault{
+    background: #FFF;
+    td{
+      color: #212121
+    }
+  }
+}
+
+.pBgInfo div{
+  background: material-color('blue', '300')
+}
+.pBgSuccess div{
+  background: material-color('green', '300')
+}
+.pBgWarning div{
+  background: material-color('orange', '300')
+}
+.pBgError div{
+  background: material-color('red', '300')
+}
+.pBgDefault div{
+  background: material-color('grey', '700')
+}
+
+// Icon Background
+.messageInfo{
+  @include theme();
+  .icon{
+    background: material-color('blue', '300')
+  }
+}
+.messageSuccess{
+  @include theme();
+  .icon{
+    background: material-color('green', '300')
+  }
+}
+.messageWarning{
+  @include theme();
+  .icon{
+    background: material-color('orange', '300')
+  }
+}
+.messageError{
+  @include theme();
+  .icon{
+    background: material-color('red', '300')
+  }
+}
+.messageDefault{
+  @include theme();
+  .icon{
+    background: material-color('grey', '300')
+  }
+}
+.linear-progress {
+  width: 70%;
+  display: inline-block;
+  margin-right: 2%;
+}
+.linear-progress-text{
+  width: 28%;
+  overflow: hidden;
+  font-size: '12px';
+  color: #666;
+}
