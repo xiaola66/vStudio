@@ -7,7 +7,6 @@
 </br></br>
 <strong>项目图展示：</strong><br/>
 <strong>1、登录</strong></br></br>
-  ![image](https://s1.ax1x.com/2020/05/28/tZM2ge.jpg)</br></br>)</br></br>
             ![image](https://github.com/xiaola66/vStudio/blob/master/img/denglu.jpg)</br></br>
             <strong>2、connect 连接</strong></br></br>
             ![image](https://github.com/xiaola66/vStudio/blob/master/img/connect%20%E8%BF%9E%E6%8E%A5.png)</br></br>
